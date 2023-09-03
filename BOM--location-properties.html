@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Document</title>
+</head>
+<body>
+    <h1>location properties</h1>
+    <button onclick="reloadFunction()">reload</button>
+    <button onclick="assignFunction()">Assign</button>
+    <button onclick="replaceFunction()">replace</button>
+    <script>
+        //document.write(location.href);
+
+
+        function assignFunction(){
+            location.assign("https://google.com");
+        }
+
+        function reloadFunction(){
+            location.reload();
+        }
+
+        function replaceFunction(){
+            location.replace("https://www.yahoobaba.net");
+        }
+    </script>
+</body>
+</html>

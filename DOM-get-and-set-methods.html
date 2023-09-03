@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM get and set methods</title>
+</head>
+<body>
+    <h1 id="fhead" class="fhead" style="border: 2px solid red;background-color: pink;"><span>DOM get and set methods</span></h1>
+    <script>
+        //Following is the how to get element
+        var element;
+        element = document.getElementById("fhead").innerText;
+        console.log(element);
+        element = document.getElementById("fhead").innerHTML;
+        console.log(element);
+        element = document.getElementById("fhead").getAttribute("style");
+        console.log(element);
+        element = document.getElementById("fhead").getAttributeNode("style");
+        console.log(element);
+        element = document.getElementById("fhead").attributes;
+        console.log(element);
+        //Following is how to set value of an element
+        document.getElementById("fhead").innerHTML = "<i><h1>Haseeb Yousaf</h1></i>";
+        document.getElementById("fhead").setAttribute("class", "first");
+        element = document.getElementById("fhead").getAttribute("class");   //Here we have used a saperate line of code to print class on console-screen
+        console.log(element);
+    </script>
+</body>
+</html>

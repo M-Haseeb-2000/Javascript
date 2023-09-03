@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        .abc{
+            font-style: italic;
+        }
+        .xyz{
+            background-color: blueviolet;
+        }
+    </style>
+    <title>CSS Styling</title>
+</head>
+<body>
+    <h1>CSS Styling</h1>
+    <p><span class="hello" id="first" style="background: tan;color: blue;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel, iusto ipsum? Dolores, distinctio possimus suscipit consequuntur dolorem aperiam dolor fugiat delectus voluptatibus ullam, modi eveniet voluptates harum labore iusto earum.</span></p>
+    <div class="last" id="last">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae reiciendis expedita, nihil fugiat necessitatibus accusamus molestias unde corrupti culpa veritatis libero reprehenderit similique. Illum placeat libero dignissimos expedita distinctio laboriosam consequuntur accusamus ex fuga, quidem, enim quisquam aliquam debitis eos sit cupiditate voluptatem ipsa. Aliquid iusto aspernatur quae, reiciendis illum quidem itaque, voluptatum aliquam repellendus minus placeat. Eaque obcaecati amet tenetur reprehenderit. Facilis ea odit ipsa doloremque pariatur ut earum nihil? Ipsum ratione sapiente illum sint provident earum laborum. Repellat officiis voluptas quidem, eum quia neque ad, itaque illo asperiores rem magni assumenda voluptatem repellendus. Repellendus quas corrupti mollitia? Culpa!</div>
+
+    <script>
+        //Style
+        var a = document.querySelector("#first").style.color;
+        console.log(a);
+        document.querySelector(".hello").style.color = "red";
+        //className
+        var b = document.querySelector(".hello").className
+        document.querySelector(".hello").className = "abc"
+        //classList
+        var c = document.querySelector(".last").classList.add("abc","xyz");
+    </script>
+</body>
+</html>

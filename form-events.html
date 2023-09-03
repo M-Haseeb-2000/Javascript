@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        input, select{
+            margin: 10px 0;
+        }
+        #box{
+            border: 1px solid red;
+            margin: 10px;
+            width: fit-content;
+            font-size: bold;
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <form action="" onsubmit="submitFunction()">
+        <label for="fname">First Name</label> <input type="text" name="fname" id="fname" required onfocus="focusFunction(this)" onblur="blurFunction(this)" oninput="inputFunction(this)" onselect="selectFunction(this)" oninvalid="invalidFunction()"><br>
+        <label for="sname">Second Name</label> <input type="text" name="sname" id="sname" onfocus="focusFunction(this)" onblur="blurFunction(this)" oninput="inputFunction(this)"><br>
+        <label for="phoneNo">Enter Your Phone Number</label> <input type="tel" name="phoneNo" id="phoneNo" value="0313" onchange="changeFunction(this)"><br>
+        <select name="country" id="country" onfocus="focusFunction(this)"  onblur="blurFunction(this)" oninput="inputFunction(this)">
+            <option value="Pakistan">Pakistan</option>
+            <option value="India">India</option>
+            <option value="Bangladesh">Bangladesh</option>
+        </select>
+        <input type="submit" value="Submit">
+    </form>
+    <div id="box"></div>
+    <script>
+        function focusFunction(element){
+            element.style.background = "green";
+        }
+        function blurFunction(sElement){
+            sElement.style.background = "";
+        }
+        function inputFunction(telement){
+            var x = telement.value;
+            
+        }
+        function changeFunction(fElement){
+            var x = fElement.value;
+            document.getElementById("box").innerHTML = x;
+        }
+        function selectFunction(sElement){
+            var x = sElement.value;
+            console.log(x);
+        }
+        function invalidFunction(){
+            console.log("Enter a valid value");
+        }
+        function submitFunction(){
+            var x = document.getElementById("fname").value;
+            alert(x);
+        }
+
+    </script>
+
+</body>
+</html>

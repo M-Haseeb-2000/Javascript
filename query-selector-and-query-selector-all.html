@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .one{
+            padding: 20px;
+            background-color: aqua;
+            border: 1px solid black;
+        }
+        .two{
+            padding: 20px;
+            background-color: rgb(255, 0, 247);
+            border: 1px solid black;
+        }
+        .three{
+            padding: 20px;
+            background-color: rgb(0, 255, 17);
+            border: 1px solid black;
+        }
+    </style>
+    <title>Query selector and query selector all</title>
+</head>
+<body>
+    <h1 id="one" class="one two">Query Selector and query selector all</h1>
+    <ul id="u">
+        <li>Lorem ipsum dolor sit amet, consectetur adipisicing.</li>
+        <li>Lorem ipsum dolor sit amet, consectetur adipisicing.</li>
+        <li>Lorem ipsum dolor sit amet, consectetur adipisicing.</li>
+        <li>Lorem ipsum dolor sit amet, consectetur adipisicing.</li>
+    </ul>
+    <ul id="u">
+        <li>Lorem ipsum dolor sit amet, consectetur adipisicing.</li>
+        <li>Lorem ipsum dolor sit amet, consectetur adipisicing.</li>
+        <li>Lorem ipsum dolor sit amet, consectetur adipisicing.</li>
+        <li>Lorem ipsum dolor sit amet, consectetur adipisicing.</li>
+    </ul>
+    <ul id="u">
+        <li>Lorem ipsum dolor sit amet, consectetur adipisicing.</li>
+        <li>Lorem ipsum dolor sit amet, consectetur adipisicing.</li>
+        <li>Lorem ipsum dolor sit amet, consectetur adipisicing.</li>
+        <li>Lorem ipsum dolor sit amet, consectetur adipisicing.</li>
+    </ul>
+    <p class="test">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum ipsam repellat, animi maiores voluptate impedit fuga dolorum ad, cumque in quisquam mollitia doloremque adipisci distinctio eveniet quibusdam debitis numquam tenetur. Natus recusandae fuga at aspernatur expedita et? Repudiandae nulla placeat culpa veniam atque repellat sit tempora mollitia aut, libero recusandae quidem sapiente! Maiores, cumque voluptatibus dicta dolores facere perferendis eveniet aliquam nostrum id quas tempora accusantium rerum placeat expedita, dolore dignissimos itaque, incidunt repudiandae ratione officiis assumenda praesentium quasi culpa. Quod, natus sint rerum neque facere mollitia quidem! Vero, veniam hic molestias aperiam velit sit architecto enim alias ducimus beatae?</p>
+
+    <script>
+        var a;
+        document.querySelector(".one").setAttribute("class", "three");
+        a = document.querySelector("#one").getAttribute("class");
+        console.log(a);
+        var b;
+        b = document.querySelectorAll("ul")[0].innerHTML;
+        console.log(b);
+        // var d = document.querySelector(".test").getAttribute("class");
+        // console.log(d);          //We cannot target an element by class in quueryselector()
+    </script>
+</body>
+</html>

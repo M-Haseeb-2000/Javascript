@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Document</title>
+</head>
+<body onresize="resizeFunction()">
+    <h1>Height and Width</h1><br><br>
+    <button onclick="OpenWindowFunction()">Open Window</button>
+    <button onclick="CloseWindowFunction()">close Window</button>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere qui veritatis officiis fugiat sapiente veniam laboriosam deserunt quod. Exercitationem numquam veritatis suscipit sit obcaecati nesciunt dolores vel asperiores ratione nihil!</p>
+    <button onclick="OpenMyWindowFunction()">Open My Window</button>
+    <button onclick="CloseMyWindowFunction()">Close My Window</button>
+    <button onclick="moveByFunction()">MoveBy</button>
+    <button onclick="moveToFunction()">MoveTo</button><br>
+    <button onclick="resizeToFunction()">resizeTo()</button>
+    <button onclick="resizeByFunction()">resizeBy()</button>
+    <script src="box-object-model(BOM).js"></script>
+    <script>
+        var myWindow;
+        function OpenWindowFunction(){
+            myWindow = window.open("https://www.yahoobaba.net/free-templates","_blank","width=500px,height=300px,top=500px,left=500px");
+        }
+        function CloseWindowFunction(){
+            myWindow.close();
+        }
+            var myNewWindow;
+            function OpenMyWindowFunction(){
+                myNewWindow = window.open("", "_blan","width=200px,height=200px,top=100px,left=400px");
+                myNewWindow.document.write("<p>This is my local window</p>");
+            }
+        
+        function CloseMyWindowFunction(){
+            myNewWindow.close();
+        }
+        //MoveTo function moves the page by its absolute position
+        function moveByFunction(){
+            myNewWindow.moveTo(200,200);
+        }
+        //MoveBy function moves the page by its relative position
+        function moveToFunction(){
+            myNewWindow.moveBy(200,200);
+        }
+        //ResizeTo function resizes the window by absolutely from its absolute position
+        function resizeToFunction(){
+            myNewWindow.resizeTo(400,400);
+        }
+        //resizeBy function resizes the window by its relative position
+        function resizeByFunction(){
+            myNewWindow.resizeBy(400,400);
+        }
+    </script>
+</body>
+</html>
