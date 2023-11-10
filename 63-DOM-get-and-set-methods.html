@@ -8,6 +8,7 @@
 </head>
 <body>
     <h1 id="fhead" class="fhead" style="border: 2px solid red;background-color: pink;"><span>DOM get and set methods</span></h1>
+    <h1 id="shead">This is second heading</h1>
     <script>
         //Following is the how to get element
         var element;
@@ -22,6 +23,7 @@
         element = document.getElementById("fhead").attributes;
         console.log(element);
         //Following is how to set value of an element
+        document.getElementById("shead").innerText = "<i><h1>Haseeb Yousaf</h1></i>";
         document.getElementById("fhead").innerHTML = "<i><h1>Haseeb Yousaf</h1></i>";
         document.getElementById("fhead").setAttribute("class", "first");
         element = document.getElementById("fhead").getAttribute("class");   //Here we have used a saperate line of code to print class on console-screen

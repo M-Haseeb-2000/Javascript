@@ -7,9 +7,9 @@ console.log(newText);
 var newComment = document.createComment("This is just a comment");
 console.log(newComment);
 // how to append the text into elements that we have created above
-newElement.appendChild(newText);
+var newFullElement = newElement.appendChild(newText);
 console.log(newElement);
-// document.getElementById("first").appendChild(newElement);
+document.getElementById("first").newHTML = newFullElement;
 //insertBefore
 var target = document.getElementById("first");
 target.insertBefore(newElement, target.childNodes[2]);
@@ -37,7 +37,7 @@ var newTa = document.createElement("li");                  //first create new el
 var newT = document.createTextNode("Wow new Text!");     //second create new text to be replaced
 newTa.appendChild(newT);                                //append the newText in newTag
 var tar = document.getElementById("list");               //target the element by naming
-var old = tar.children[1];                          //target the old element with text
+var old = tar.children[2];                          //target the old element with text
 console.log(old);
 tar.replaceChild(newTa, old);
 

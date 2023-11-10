@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date Methods</title>
+</head>
+<body>
+    <script>
+        //The following methods are for date and time of present moment because javascript fetches the date and time from your local system
+        var now = new Date();
+        document.write(now + "<br>");
+        document.write(now.toDateString() + "<br>");
+        document.write(now.getDate() + "<br>");
+        document.write(now.getFullYear() + "<br>");
+        document.write(now.getMonth() + "<br>");
+        document.write(now.getDay() + "<br>");
+        document.write(now.getHours() + "<br>");
+        document.write(now.getMinutes() + "<br>");
+        document.write(now.getSeconds() + "<br>");
+        document.write(now.getMilliseconds() + "<br>");
+        //You can pass a parameter for your custom date and time
+        var now = new Date('january 5 2010');
+
+
+        //Following are the methods to set the date and time either that has been passed or to come in future
+        var then = new Date();
+        then.setDate(2)
+        then.setMonth(5)
+        then.setFullYear(1503)
+        then.setHours(15)
+        then.setMinutes(10)
+        then.setSeconds(19)
+        then.setMilliseconds(2)
+        document.write(then + "<br>");
+    </script>
+</body>
+</html>

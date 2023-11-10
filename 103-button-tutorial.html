@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        #box{
+            background-color: pink;
+            height: 300px;
+            width: 300px;
+        }
+    </style>
+    <title>Button tutorial</title>
+</head>
+<body>
+    <div id="box"></div>
+    <script>
+            var target = document.getElementById("box");
+            target.addEventListener("mousedown", function(e) {
+            console.clear();
+            var valu = e.button;
+            switch (valu) {
+                case 0:
+                    bgcolor = "red";
+                    break;
+                case 1:
+                    bgcolor = "green";
+                    break;
+                case 2:
+                    bgcolor = "blue";
+                    break;
+                default:
+                    bgcolor = "pink";
+                    break;
+            }
+            target.style.backgroundColor = bgcolor;
+        });
+    </script>
+</body>
+</html>

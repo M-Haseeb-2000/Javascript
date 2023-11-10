@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>for in loop</title>
+</head>
+<body>
+    <script>
+        var Obj = {
+            fname : "Haseeb",
+            sname : "Yousaf",
+            age : 22,
+            grade : 'A',
+            hobbies : ["Development", "fun", "Money"],
+            this_func : function(){
+                return this.fname + this.sname;
+            },
+            obj2 : {
+                broName : "Sami",
+                age : 19
+            }
+        }
+        for(var i in Obj){
+            document.write(i + "<br>");
+        }
+    </script>
+</body>
+</html>

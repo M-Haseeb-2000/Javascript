@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objects</title>
+</head>
+<body>
+    <script>
+        var Obj = {
+            fname : "Haseeb",
+            sname : "Yousaf",
+            age : 22,
+            grade : 'A',
+            hobbies : ["Development", "fun", "Money"],
+            this_func : function(){
+                return this.fname + this.sname;
+            },
+            obj2 : {
+                broName : "Sami",
+                age : 19
+            }
+        }
+        document.write(Obj.fname + "<br>");
+        document.write(Obj.hobbies[1] + "<br>");
+        document.write(Obj.this_func() + "<br>");
+        document.write(Obj.obj2.broName + "<br>");
+    </script> 
+</body>
+</html>

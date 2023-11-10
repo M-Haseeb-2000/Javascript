@@ -21,22 +21,23 @@
     <div id="box2"></div>
     <button id="stopAnimation" onclick="stopAnimation()">Stop animation</button>
     <script>
-        // var a = 300;
-        // var animation = setInterval(anim, 100);
-        // function anim(){
-        //     if(a == 600){
-        //         clearInterval(animation);
-        //     }
-        //     else{
-        //         a = a + 10;
-        //     var target = document.getElementById("box");
-        //     target.style.width = a + 'px';
-        //     }
-            
-        // }
-        //If you want that the animation runs after a specific interval and want that animation runs and completed till end you can use setTimeout() interval
-        var animation2 = setTimeout(anim, 5000);
+        var a = 300;
+        var animation = setInterval(anim, 100);
         function anim(){
+            if(a == 600){
+                clearInterval(animation);
+            }
+            else{
+                a = a + 10;
+                console.log(a);
+            var target = document.getElementById("box");
+            target.style.width = a + 'px';
+            }
+            
+        }
+        //If you want that the animation runs after a specific interval and want that animation runs and completed till end you can use setTimeout() interval
+        var animation2 = setTimeout(anim2, 5000);
+        function anim2(){
             var target = document.getElementById("box2");
             target.style.width = "500px";
         }

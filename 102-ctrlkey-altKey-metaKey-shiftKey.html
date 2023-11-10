@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        #box{
+            height: 200px;
+            width: 200px;
+            border: 2px solid black;
+            background-color: pink;
+        }
+    </style>
+    <title>ctrlKey altKey metaKey and shiftKey</title>
+</head>
+<body>
+    <input type="text" name="" id="myText">
+    <div id="box">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum, nostrum!</div>
+    <script>
+        document.getElementById("box").addEventListener("click", function(e){
+            console.clear();
+            switch (true) {
+                case e.altKey:
+                    console.log("You pressed alt key");
+                    break;
+                    case e.metaKey:
+                    console.log("You pressed meta key");
+                    break;
+                    case e.ctrlKey:
+                    console.log("You pressed ctrl key");
+                    break;
+                    case e.shiftKey:
+                    console.log("You pressed shift key");
+                    break;
+            default:
+                console.log("You pressed non of the key");
+                break;
+            }
+        });
+        document.getElementById("myText").addEventListener("keydown", function(e){
+            console.clear();
+            switch (true) {
+                case e.altKey:
+                    console.log("You pressed alt key");
+                    break;
+                    case e.metaKey:
+                    console.log("You pressed meta key");
+                    break;
+                    case e.ctrlKey:
+                    console.log("You pressed ctrl key");
+                    break;
+                    case e.shiftKey:
+                    console.log("You pressed shift key");
+                    break;
+            default:
+                console.log("You pressed non of the key");
+                break;
+            }
+        });
+    </script>
+</body>
+</html>

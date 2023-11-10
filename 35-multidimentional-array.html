@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multidimentional Array</title>
+</head>
+<body>
+    <script>
+        var ary = [
+            [1,"Haseeb","Yousaf","2021-ag-7950","IT",false],
+            [2,"Mohsin","Saif","2021-ag-7945","IT",false],
+            [3,"Sami","Yousaf","2021-ag-7920","BT",false],
+            [4,"Talha","Ijaz","2021-ag-7910","IT",false],
+            [5,"Maalang","Don","2021-ag-8950","IT",true],
+        ];
+        for(i=0;i<ary.length;i++){
+            document.write("<table border='1' cellspacing='0'>");
+                document.write("<tr>");
+            for(j=0;j<ary[i].length;j++){
+                document.write("<td>");
+                document.write(ary[i][j])
+                document.write("</td>");
+            }
+            document.write("</tr>");
+            document.write("</table>");
+        }
+    </script>
+</body>
+</html>

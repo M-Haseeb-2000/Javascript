@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        #outer{
+            width: 80%;
+            height: 300px;
+            border: 2px solid black;
+            margin: 90px auto;
+            background-color: brown;
+            display: flex;
+        }
+        #inner{
+            width: 90%;
+            height: 200px;
+            border: 2px solid black;
+            display: flex;
+            background-color: aquamarine;
+            margin: auto;
+        }
+        .child{
+            width: 80px;
+            height: 80px;
+            border: 2px solid black;
+            margin: auto;
+            background-color: cyan;
+        }
+    </style>
+    <title>DOM Traversal methods</title>
+</head>
+<body>
+    <div id="outer">
+        <h2>Outer</h2>
+        <div id="inner"><!-- this is just a comment -->
+            <h2>Inner</h2><!-- this is second comment -->
+
+            <div class="one child">One</div>
+            <div class="two child">Two</div>
+            <div class="three child">Three</div>
+            <div class="four child">Four</div>
+            <!-- this is third comment --><div class="five child">Five</div>
+        </div>
+    </div>
+    <button id="button1">Click</button>
+    <button id="button2">Click</button>
+    <button id="button3">Click</button>
+    <script src="DOM-traversal-methods.js"></script>
+</body>
+</html>

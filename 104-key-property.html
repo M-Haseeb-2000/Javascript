@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        #box{
+            background-color: blue;
+            width: 200px;
+            aspect-ratio: 1/1;
+        }
+    </style>
+    <title>Key property</title>
+</head>
+<body>
+    <div id="box"></div>
+    <script>
+        var ver = 0;
+        var hor = 0;
+        var target = document.getElementById("box");
+        document.querySelector("body").addEventListener("keydown",function(e){
+            
+            console.log(e.key);
+            switch (e.key) {
+                case "ArrowUp":
+                    ver -= 5;
+                    break;
+                case "ArrowDown":
+                    ver += 5;
+                    break;
+                case "ArrowLeft":
+                    hor -= 5;
+                    break;
+                case "ArrowRight":
+                    hor += 5;
+                    break;
+                default:
+                    
+                    break;
+            };
+            target.style.marginTop = ver + "px";
+            target.style.marginTop = ver + "px";
+            target.style.marginLeft = hor + "px";
+            target.style.marginLeft = hor + "px";
+            
+        });
+    </script>
+</body>
+</html>

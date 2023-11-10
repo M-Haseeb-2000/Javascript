@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        #myText{
+            height: 30px;
+            width: 200px;
+        }
+        #myBox{
+            height: 400px;
+            width: 300px;
+            background-color: pink;
+        }
+    </style>
+    <title>Clipboard events</title>
+</head>
+<body>
+    <h1>click events : copy, paste and cut</h1>
+    <input type="text" name="" id="myText">
+    <div id="myBox">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere asperiores veniam, commodi suscipit impedit, architecto fugiat laboriosam amet dolorem officiis magnam aliquam, dolore ipsum harum nam nostrum odio. Incidunt, omnis?
+    </div>
+    <script>
+        var three = document.getElementById("myText");
+        three.addEventListener("copy", function(){
+            three.style.backgroundColor = "green";
+        });
+        three.addEventListener("paste", function(){
+            three.style.backgroundColor = "yellow";
+        });
+        three.addEventListener("cut", function(){
+            three.style.backgroundColor = "red";
+        });
+        var one = document.querySelector("#myBox");
+        one.addEventListener("copy", function(){
+            one.style.backgroundColor = "orange";
+        });
+    </script>
+</body>
+</html>
